@@ -1,0 +1,168 @@
+:root {
+  /* Primary */
+  --Cyan: hsl(179, 62%, 43%);
+  --FigmaColor: #4bbfbd;
+  --BrightYellow: hsl(71, 73%, 54%);
+  /* Neutral */
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+  /* Font */
+  --font: "Karla", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--LightGray);
+
+  font-size: 1.6rem;
+  font-family: var(--font);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: 31.1rem;
+}
+
+.box {
+  padding: 2.8rem 2.4rem 3.2rem;
+}
+
+/****** Box One  *******/
+
+.boxOne {
+  background-color: white;
+  border-radius: 4px 4px 0 0;
+}
+
+.boxOne h1 {
+  margin-bottom: 2.4rem;
+
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Cyan);
+}
+
+.boxOne p:nth-of-type(1) {
+  margin-bottom: 1.6rem;
+
+  color: var(--BrightYellow);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.boxOne p:nth-of-type(2) {
+  color: var(--GrayishBlue);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 26px;
+}
+
+/****** Box Two  *******/
+
+.boxTwo {
+  background-color: var(--Cyan);
+}
+
+.boxTwo h1 {
+  margin-bottom: 1.8rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  color: white;
+}
+
+.cost {
+  margin-bottom: 0.4rem;
+
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.cost span {
+  font-size: 3.2rem;
+  font-weight: 700;
+
+  color: white;
+}
+
+.cost p {
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  color: white;
+  opacity: 50%;
+}
+
+.boxTwo > p:last-of-type {
+  margin-bottom: 2.6rem;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  color: white;
+}
+
+.boxTwo button {
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  border-radius: 5px;
+
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: var(--BrightYellow);
+  color: white;
+
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/******** box Three ********/
+
+.boxThree {
+  background-color: var(--FigmaColor);
+  color: white;
+}
+
+.boxThree > h1 {
+  margin-bottom: 1.8rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.boxThree ul {
+  list-style: none;
+  opacity: 75%;
+
+  font-size: 1.4rem;
+  font-size: 400;
+  line-height: 20px;
+}
+
+@media (min-width: 650px) {
+  main {
+    max-width: 63.5rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
